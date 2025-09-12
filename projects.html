@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>OBLIQ ASSOCIATES — Projects</title>
+<meta name="description" content="Signature projects — office, commercial infrastructure and interiors across India."/>
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png">
+<link rel="stylesheet" href="assets/shared.css">
+<style>
+.hero-video{position:relative; height:calc(100 * var(--vh)); min-height:100vh; overflow:hidden; width:100%}
+.hero-video video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; background:#000}
+/* Mobile: prevent zoom/crop */
+@media (max-width:640px){
+  .hero-video video{object-fit:contain; background:#000}
+}
+.section-title{width:min(1200px,92%); margin:24px auto 8px; font-size:var(--h2); font-weight:800}
+.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; padding:16px 0 64px; width:min(1200px,92%); margin-inline:auto}
+.card{background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:var(--shadow-1); display:flex; flex-direction:column; cursor:pointer}
+.thumb{aspect-ratio:16/10; object-fit:cover; width:100%}
+.meta{padding:14px}
+.title{font-weight:800}
+.subtle{color:var(--muted)}
+@media (max-width:1024px){ .grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:620px){ .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png" alt="OBLIQ ASSOCIATES Logo">
+      OBLIQ ASSOCIATES
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active" aria-current="page">Projects</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-video" aria-label="Landing video">
+  <video id="landingVideo" autoplay muted loop playsinline>
+    <source src="https://res.cloudinary.com/dvpmvben2/video/upload/v1756982290/clarity-stream_2_zp1xtf.mp4" type="video/mp4"/>
+  </video>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,40 C280,10 560,70 840,40 C1120,10 1400,60 1440,40 L1440,80 L0,80 Z" fill="url(#g1)"/>
+    <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9EAFD"/><stop offset="1" stop-color="#BCCCDC"/></linearGradient></defs>
+  </svg>
+</div>
+
+<main aria-label="Project gallery">
+  <h2 class="section-title">Signature Projects</h2>
+  <section class="grid">
+    <!-- Example cards (use your real project assets) -->
+    <article class="card">
+      <img class="thumb" loading="lazy" src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200" alt="Office interior">
+      <div class="meta"><div class="title">HQ Collaboration Hub</div><div class="subtle">Bengaluru • 45,000 sqft</div></div>
+    </article>
+    <article class="card">
+      <img class="thumb" loading="lazy" src="https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?q=80&w=1200" alt="Lobby">
+      <div class="meta"><div class="title">Enterprise Lobby</div><div class="subtle">Hyderabad • 12,000 sqft</div></div>
+    </article>
+    <article class="card">
+      <img class="thumb" loading="lazy" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200" alt="Workspace">
+      <div class="meta"><div class="title">Agile Workspace</div><div class="subtle">Mumbai • 30,000 sqft</div></div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="f-grid">
+    <div>
+      <div class="f-title">OBLIQ ASSOCIATES</div>
+      <p>Human‑centred design, strategy to delivery.</p>
+    </div>
+    <div>
+      <div class="f-title">Connect</div>
+      <p><a href="mailto:thaqsheel.vincent@obliqassociates.com">thaqsheel.vincent@obliqassociates.com</a></p>
+      <p><a href="https://www.linkedin.com/company/obliq-associates">LinkedIn</a> • <a href="https://instagram.com/obliqassociates">Instagram</a></p>
+    </div>
+    <div>
+      <div class="f-title">Offices</div>
+      <p>Bengaluru, India</p>
+    </div>
+    <div>
+      <div class="f-title">Legal</div>
+      <p>© 2025 OBLIQ ASSOCIATES</p>
+    </div>
+  </div>
+  <div class="container copyright">© 2025 OBLIQ ASSOCIATES</div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script>
+  SiteHelpers.fitLandingVideo(document.getElementById('landingVideo'));
+  SiteHelpers.autoPlayWhenVisible(document.getElementById('landingVideo'));
+</script>
+</body>
+</html>

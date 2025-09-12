@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>About Us | OBLIQ ASSOCIATES</title>
+<meta name="description" content="OBLIQ ASSOCIATES - architecture for office, commercial infrastructure, and interiors. Bengaluru, India."/>
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png">
+<link rel="stylesheet" href="assets/shared.css">
+<style>
+.hero{padding:clamp(28px,4vw,48px) 0; background:
+  radial-gradient(900px 520px at 100% 0, rgba(231,111,81,.08), transparent 60%),
+  radial-gradient(800px 520px at 0 0, rgba(42,157,143,.10), transparent 55%)}
+.hero-grid{display:grid; grid-template-columns:1fr; gap:clamp(12px,2.5vw,22px); align-items:center}
+.team-row{display:flex; gap:16px; overflow-x:auto; padding:10px 8px; scroll-snap-type:x proximity; border:1px solid var(--line); border-radius:16px; background:#fff; box-shadow:var(--shadow-1)}
+.member{flex:0 0 auto; display:flex; align-items:center; gap:14px; padding:12px 14px; border-radius:16px; border:1px solid var(--line); background:linear-gradient(180deg,#ffffff 0%, #f8fbff 100%); scroll-snap-align:center}
+.avatar{width:112px; height:112px; border-radius:50%; overflow:hidden; border:1px solid var(--line); background:#f4f6fb}
+.avatar img{width:100%; height:100%; object-fit:cover; aspect-ratio:1/1}
+.name{font-weight:900}
+.role{color:#64748b; font-size:.98rem}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png" alt="OBLIQ ASSOCIATES Logo" loading="lazy" decoding="async">
+      OBLIQ ASSOCIATES
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="about.html" class="active" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>We design enduring spaces for ambitious teams.</h1>
+      <p class="lead">An architecture firm from Bengaluru crafting high‑performance offices, commercial infrastructure, and interiors.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,40 C280,10 560,70 840,40 C1120,10 1400,60 1440,40 L1440,80 L0,80 Z" fill="url(#g1)"/>
+    <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9EAFD"/><stop offset="1" stop-color="#BCCCDC"/></linearGradient></defs>
+  </svg>
+</div>
+
+<section class="section container">
+  <span class="eyebrow">Team</span>
+  <div class="team-row">
+    <div class="member">
+      <div class="avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400" alt="Team member"></div>
+      <div><div class="name">Lead Architect</div><div class="role">Strategy & Design</div></div>
+    </div>
+    <div class="member">
+      <div class="avatar"><img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=400" alt="Team member"></div>
+      <div><div class="name">Project Manager</div><div class="role">Delivery</div></div>
+    </div>
+    <div class="member">
+      <div class="avatar"><img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400" alt="Team member"></div>
+      <div><div class="name">Engineering Lead</div><div class="role">MEP & Coordination</div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="f-grid">
+    <div>
+      <div class="f-title">OBLIQ ASSOCIATES</div>
+      <p>Human‑centred design, strategy to delivery.</p>
+    </div>
+    <div>
+      <div class="f-title">Connect</div>
+      <p><a href="mailto:thaqsheel.vincent@obliqassociates.com">thaqsheel.vincent@obliqassociates.com</a></p>
+      <p><a href="https://www.linkedin.com/company/obliq-associates">LinkedIn</a> • <a href="https://instagram.com/obliqassociates">Instagram</a></p>
+    </div>
+    <div>
+      <div class="f-title">Offices</div>
+      <p>Bengaluru, India</p>
+    </div>
+    <div>
+      <div class="f-title">Legal</div>
+      <p>© 2025 OBLIQ ASSOCIATES</p>
+    </div>
+  </div>
+  <div class="container copyright">© 2025 OBLIQ ASSOCIATES</div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Get in touch | OBLIQ ASSOCIATES</title>
+<meta name="description" content="Contact OBLIQ ASSOCIATES — architecture for office, commercial infrastructure & interiors. Bengaluru, India."/>
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png">
+<link rel="stylesheet" href="assets/shared.css">
+<style>
+.hero{padding:clamp(60px,8vw,120px) 0; background:
+  radial-gradient(1000px 500px at 100% 0, rgba(217,234,253,.42), transparent 60%),
+  radial-gradient(800px 520px at 0 0, rgba(188,204,220,.30), transparent 55%)}
+.hero h1{font-size:var(--h1); margin:0 0 10px}
+.lead{color:#475569; font-size:clamp(1rem,.9rem + .5vw,1.2rem); margin:0}
+
+/* Visual band with images */
+.gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:16px}
+.gallery .ph{aspect-ratio:16/10; border-radius:14px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow-1)}
+.gallery img{width:100%; height:100%; object-fit:cover}
+@media (max-width:900px){ .gallery{grid-template-columns:1fr} }
+
+/* Form */
+.section{padding:clamp(40px,6vw,80px) 0}
+.card{background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow-1); padding:22px}
+form{display:grid; gap:14px}
+.row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+@media (max-width:720px){ .row{grid-template-columns:1fr} }
+label{display:block; font-weight:700; margin-bottom:6px}
+.req{color:#ef4444; margin-left:4px; font-weight:800}
+input, textarea{ width:100%; padding:12px 12px; border-radius:12px; border:1px solid var(--line); background:#fff; font:inherit; }
+textarea{min-height:140px; resize:vertical}
+.hint{color:var(--muted); font-size:.92rem}
+.status{margin-top:8px; font-weight:700}
+.status.ok{color:#15803d}.status.err{color:#b91c1c}
+
+/* Map */
+.map-wrap{margin-top:18px; border-radius:16px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow-1)}
+.map{aspect-ratio:16/9; width:100%; border:0; display:block; background:#f1f5f9}
+.skeleton{height:100%; width:100%; display:flex; align-items:center; justify-content:center; color:#64748b}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png" alt="OBLIQ ASSOCIATES Logo">
+      OBLIQ ASSOCIATES
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Get in touch</h1>
+    <p class="lead">We usually reply within one business day.</p>
+
+    <div class="gallery">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400" alt="Studio"/></div>
+      <div class="ph"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400" alt="Workspace"/></div>
+      <div class="ph"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1400" alt="Meeting"/></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card">
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="674fa470-93e7-4ccb-b383-cc0a7f7b6d36">
+        <input type="hidden" name="subject" value="Website enquiry — OBLIQ ASSOCIATES">
+        <input type="hidden" name="from_name" value="OBLIQ ASSOCIATES Site">
+        <input type="text" name="company" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute; left:-9999px; opacity:0;">
+        <input type="hidden" name="load_ts" id="loadTS">
+
+        <div class="row">
+          <div>
+            <label for="firstName">First name<span class="req" aria-hidden="true">*</span></label>
+            <input id="firstName" name="first_name" type="text" required autocomplete="given-name" />
+          </div>
+          <div>
+            <label for="lastName">Last name<span class="req" aria-hidden="true">*</span></label>
+            <input id="lastName" name="last_name" type="text" required autocomplete="family-name" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="email">Email<span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" inputmode="email" />
+          </div>
+          <div>
+            <label for="phone">Phone<span class="req" aria-hidden="true">*</span></label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" />
+          </div>
+        </div>
+
+        <div>
+          <label for="message">Message<span class="req" aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" required placeholder="Tell us about your project, timeline and budget..."></textarea>
+        </div>
+
+        <div class="hint">Fields marked with <span class="req">*</span> are required.</div>
+
+        <div>
+          <button id="submitBtn" class="btn primary" type="submit">Send message</button>
+          <button type="button" id="whBtn" class="btn" title="Send via WhatsApp">Send via WhatsApp</button>
+          <div id="status" class="status" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Map (lazy) -->
+    <div class="map-wrap" id="mapWrap" aria-label="Office location">
+      <div class="skeleton">Map loads as you scroll…</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="f-grid">
+    <div>
+      <div class="f-title">OBLIQ ASSOCIATES</div>
+      <p>Human‑centred design, strategy to delivery.</p>
+    </div>
+    <div>
+      <div class="f-title">Connect</div>
+      <p><a href="mailto:thaqsheel.vincent@obliqassociates.com">thaqsheel.vincent@obliqassociates.com</a></p>
+      <p><a href="https://www.linkedin.com/company/obliq-associates">LinkedIn</a> • <a href="https://instagram.com/obliqassociates">Instagram</a></p>
+    </div>
+    <div>
+      <div class="f-title">Offices</div>
+      <p>Bengaluru, India</p>
+    </div>
+    <div>
+      <div class="f-title">Legal</div>
+      <p>© 2025 OBLIQ ASSOCIATES</p>
+    </div>
+  </div>
+  <div class="container copyright">© 2025 OBLIQ ASSOCIATES</div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script>
+  // WhatsApp compose
+  document.getElementById('whBtn').addEventListener('click', ()=>{
+    const name = (document.getElementById('firstName').value || '') + ' ' + (document.getElementById('lastName').value || '');
+    const msg = encodeURIComponent(`Hello, I'm ${name.trim()}. I would like to discuss a new project.`);
+    window.open(`https://wa.me/919000000000?text=${msg}`, '_blank');
+  });
+  // Map lazy load (OpenStreetMap)
+  const wrap = document.getElementById('mapWrap');
+  const io = new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(e.isIntersecting){
+        wrap.innerHTML = `<iframe class="map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=77.4,12.8,77.8,13.2&layer=mapnik&marker=12.9716,77.5946"></iframe>`;
+        io.disconnect();
+      }
+    });
+  },{threshold:.2});
+  io.observe(wrap);
+</script>
+</body>
+</html>

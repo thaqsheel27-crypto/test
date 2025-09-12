@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>OBLIQ ASSOCIATES - Architecture & Workplace</title>
+<meta name="description" content="Architecture for office, commercial infrastructure & interiors. Human‑centred design, strategy to delivery. Bengaluru, India."/>
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1757580005/Screenshot_2025-09-11_at_2.08.02_PM_p2euse.png">
+<link rel="stylesheet" href="assets/shared.css">
+<style>
+/* Sticky video hero */
+.video-zone{position:relative; height:210vh;}
+.sticky-layer{position:sticky; top:0; height:100vh; overflow:hidden; display:grid; place-items:center; isolation:isolate;}
+.bg-video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2; background:#000;}
+.scrim{position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.58)); z-index:-1}
+.center-wrap{max-width:1000px; padding:0 16px; text-align:center; color:#fff; text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.hero-msg{font-weight:400; line-height:1.3; font-size:26px; font-family:"Helvetica Neue", Arial, ui-sans-serif}
+
+/* Map section */
+.world{border:1px solid var(--line); border-radius:16px; padding:18px; background:linear-gradient(180deg,#fff,#f5f9ff); box-shadow:var(--shadow-1)}
+.world .legend{display:flex; gap:12px; align-items:center; flex-wrap:wrap; color:#334155; font-weight:700; margin-bottom:10px}
+.world svg{width:100%; height:auto; display:block}
+.world .dot{fill:#4b5563; opacity:.8}
+.world .pulse{fill:#22c55e; animation:pulse 2.2s infinite ease-in-out}
+@keyframes pulse{0%{opacity:.2; r:2}50%{opacity:.7; r:5}100%{opacity:.2; r:2}}
+
+/* Cards under the map */
+.grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+.card{background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; box-shadow:var(--shadow-1)}
+@media (max-width:960px){ .grid3{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1757580005/Screenshot_2025-09-11_at_2.08.02_PM_p2euse.png" alt="OBLIQ ASSOCIATES Logo">
+      OBLIQ ASSOCIATES
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="video-zone" id="videoZone">
+  <div class="sticky-layer">
+    <video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="metadata" poster="">
+      <source src="https://res.cloudinary.com/dvpmvben2/video/upload/v1754466739/skdnfs_1_1_nlm7po.mp4">
+    </video>
+    <div class="scrim"></div>
+    <div class="center-wrap">
+      <div class="hero-msg">Delivering intelligent design solutions that bring out the best in people and organizations.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,40 C280,10 560,70 840,40 C1120,10 1400,60 1440,40 L1440,80 L0,80 Z" fill="url(#g1)"/>
+    <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9EAFD"/><stop offset="1" stop-color="#BCCCDC"/></linearGradient></defs>
+  </svg>
+</div>
+
+<section class="section container">
+  <span class="eyebrow">Delivering across India & beyond</span>
+  <h2 style="margin:.15em 0 .5em">Our footprint</h2>
+  <div class="world">
+    <div class="legend">• HQ: Bengaluru • Active: India metros • Projects: Middle East inquiries</div>
+    <!-- Simple, lightweight SVG map with pins -->
+    <svg viewBox="0 0 800 460" role="img" aria-label="Map of India with project markers">
+      <rect x="0" y="0" width="800" height="460" fill="#eef4ff"/>
+      <!-- India outline (approx / light) -->
+      <path d="M486,94 L506,115 L498,140 L514,164 L512,184 L492,184 L468,200 L454,226 L462,248 L442,258 L432,286 L440,306 L426,322 L412,314 L402,300 L388,284 L382,258 L394,238 L388,216 L404,198 L414,176 L428,160 L432,138 L452,118 Z" fill="#cfe2ff" stroke="#94a3b8"/>
+      <!-- Pins -->
+      <circle cx="412" cy="314" r="4" class="pulse"><title>Bengaluru (HQ)</title></circle>
+      <circle cx="462" cy="248" r="3" class="dot"><title>Mumbai</title></circle>
+      <circle cx="468" cy="200" r="3" class="dot"><title>Delhi NCR</title></circle>
+      <circle cx="454" cy="226" r="3" class="dot"><title>Ahmedabad</title></circle>
+      <circle cx="388" cy="284" r="3" class="dot"><title>Chennai</title></circle>
+      <circle cx="382" cy="258" r="3" class="dot"><title>Hyderabad</title></circle>
+      <circle cx="394" cy="238" r="3" class="dot"><title>Pune</title></circle>
+      <!-- "Beyond" marker (Dubai) -->
+      <circle cx="540" cy="250" r="3" class="dot"><title>Dubai (inquiries)</title></circle>
+    </svg>
+    <div class="grid3" style="margin-top:12px">
+      <div class="card"><strong>Pan‑India delivery</strong><br><span style="color:#64748b">We partner with reliable vendors across metros and tier‑2 cities.</span></div>
+      <div class="card"><strong>Remote design reviews</strong><br><span style="color:#64748b">Weekly design reviews keep stakeholders aligned and decisions fast.</span></div>
+      <div class="card"><strong>Global readiness</strong><br><span style="color:#64748b">Documentation, QA/QC and standards ready for cross‑border work.</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,40 C280,10 560,70 840,40 C1120,10 1400,60 1440,40 L1440,80 L0,80 Z" fill="url(#g1)"/>
+    <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9EAFD"/><stop offset="1" stop-color="#BCCCDC"/></linearGradient></defs>
+  </svg>
+</div>
+
+<footer class="footer">
+  <div class="f-grid">
+    <div>
+      <div class="f-title">OBLIQ ASSOCIATES</div>
+      <p>Human‑centred design, strategy to delivery.</p>
+    </div>
+    <div>
+      <div class="f-title">Connect</div>
+      <p><a href="mailto:thaqsheel.vincent@obliqassociates.com">thaqsheel.vincent@obliqassociates.com</a></p>
+      <p><a href="https://www.linkedin.com/company/obliq-associates">LinkedIn</a> • <a href="https://instagram.com/obliqassociates">Instagram</a></p>
+    </div>
+    <div>
+      <div class="f-title">Offices</div>
+      <p>Bengaluru, India</p>
+    </div>
+    <div>
+      <div class="f-title">Legal</div>
+      <p>© 2025 OBLIQ ASSOCIATES</p>
+    </div>
+  </div>
+  <div class="container copyright">© 2025 OBLIQ ASSOCIATES</div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script>
+  SiteHelpers.fitLandingVideo(document.getElementById('bgVideo'));
+  SiteHelpers.autoPlayWhenVisible(document.getElementById('bgVideo'));
+</script>
+</body>
+</html>
