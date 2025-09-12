@@ -1,172 +1,305 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Get in touch | OBLIQ ASSOCIATES</title>
-<meta name="description" content="Contact OBLIQ ASSOCIATES — architecture for office, commercial infrastructure & interiors. Bengaluru, India."/>
-<link rel="icon" type="image/png" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png">
-<link rel="stylesheet" href="assets/shared.css">
-<style>
-.hero{padding:clamp(60px,8vw,120px) 0; background:
-  radial-gradient(1000px 500px at 100% 0, rgba(217,234,253,.42), transparent 60%),
-  radial-gradient(800px 520px at 0 0, rgba(188,204,220,.30), transparent 55%)}
-.hero h1{font-size:var(--h1); margin:0 0 10px}
-.lead{color:#475569; font-size:clamp(1rem,.9rem + .5vw,1.2rem); margin:0}
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-/* Visual band with images */
-.gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:16px}
-.gallery .ph{aspect-ratio:16/10; border-radius:14px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow-1)}
-.gallery img{width:100%; height:100%; object-fit:cover}
-@media (max-width:900px){ .gallery{grid-template-columns:1fr} }
-
-/* Form */
-.section{padding:clamp(40px,6vw,80px) 0}
-.card{background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow-1); padding:22px}
-form{display:grid; gap:14px}
-.row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-@media (max-width:720px){ .row{grid-template-columns:1fr} }
-label{display:block; font-weight:700; margin-bottom:6px}
-.req{color:#ef4444; margin-left:4px; font-weight:800}
-input, textarea{ width:100%; padding:12px 12px; border-radius:12px; border:1px solid var(--line); background:#fff; font:inherit; }
-textarea{min-height:140px; resize:vertical}
-.hint{color:var(--muted); font-size:.92rem}
-.status{margin-top:8px; font-weight:700}
-.status.ok{color:#15803d}.status.err{color:#b91c1c}
-
-/* Map */
-.map-wrap{margin-top:18px; border-radius:16px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow-1)}
-.map{aspect-ratio:16/9; width:100%; border:0; display:block; background:#f1f5f9}
-.skeleton{height:100%; width:100%; display:flex; align-items:center; justify-content:center; color:#64748b}
-</style>
-</head>
-<body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png" alt="OBLIQ ASSOCIATES Logo">
-      OBLIQ ASSOCIATES
-    </a>
-    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="sustainability.html">Sustainability</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="active" aria-current="page">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <h1>Get in touch</h1>
-    <p class="lead">We usually reply within one business day.</p>
-
-    <div class="gallery">
-      <div class="ph"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400" alt="Studio"/></div>
-      <div class="ph"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400" alt="Workspace"/></div>
-      <div class="ph"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1400" alt="Meeting"/></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="card">
-      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
-        <input type="hidden" name="access_key" value="674fa470-93e7-4ccb-b383-cc0a7f7b6d36">
-        <input type="hidden" name="subject" value="Website enquiry — OBLIQ ASSOCIATES">
-        <input type="hidden" name="from_name" value="OBLIQ ASSOCIATES Site">
-        <input type="text" name="company" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute; left:-9999px; opacity:0;">
-        <input type="hidden" name="load_ts" id="loadTS">
-
-        <div class="row">
-          <div>
-            <label for="firstName">First name<span class="req" aria-hidden="true">*</span></label>
-            <input id="firstName" name="first_name" type="text" required autocomplete="given-name" />
-          </div>
-          <div>
-            <label for="lastName">Last name<span class="req" aria-hidden="true">*</span></label>
-            <input id="lastName" name="last_name" type="text" required autocomplete="family-name" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div>
-            <label for="email">Email<span class="req" aria-hidden="true">*</span></label>
-            <input id="email" name="email" type="email" required autocomplete="email" inputmode="email" />
-          </div>
-          <div>
-            <label for="phone">Phone<span class="req" aria-hidden="true">*</span></label>
-            <input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" />
-          </div>
-        </div>
-
-        <div>
-          <label for="message">Message<span class="req" aria-hidden="true">*</span></label>
-          <textarea id="message" name="message" required placeholder="Tell us about your project, timeline and budget..."></textarea>
-        </div>
-
-        <div class="hint">Fields marked with <span class="req">*</span> are required.</div>
-
-        <div>
-          <button id="submitBtn" class="btn primary" type="submit">Send message</button>
-          <button type="button" id="whBtn" class="btn" title="Send via WhatsApp">Send via WhatsApp</button>
-          <div id="status" class="status" role="status" aria-live="polite"></div>
-        </div>
-      </form>
-    </div>
-
-    <!-- Map (lazy) -->
-    <div class="map-wrap" id="mapWrap" aria-label="Office location">
-      <div class="skeleton">Map loads as you scroll…</div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="f-grid">
-    <div>
-      <div class="f-title">OBLIQ ASSOCIATES</div>
-      <p>Human‑centred design, strategy to delivery.</p>
-    </div>
-    <div>
-      <div class="f-title">Connect</div>
-      <p><a href="mailto:thaqsheel.vincent@obliqassociates.com">thaqsheel.vincent@obliqassociates.com</a></p>
-      <p><a href="https://www.linkedin.com/company/obliq-associates">LinkedIn</a> • <a href="https://instagram.com/obliqassociates">Instagram</a></p>
-    </div>
-    <div>
-      <div class="f-title">Offices</div>
-      <p>Bengaluru, India</p>
-    </div>
-    <div>
-      <div class="f-title">Legal</div>
-      <p>© 2025 OBLIQ ASSOCIATES</p>
-    </div>
-  </div>
-  <div class="container copyright">© 2025 OBLIQ ASSOCIATES</div>
-</footer>
-
-<script src="assets/main.js"></script>
-<script>
-  // WhatsApp compose
-  document.getElementById('whBtn').addEventListener('click', ()=>{
-    const name = (document.getElementById('firstName').value || '') + ' ' + (document.getElementById('lastName').value || '');
-    const msg = encodeURIComponent(`Hello, I'm ${name.trim()}. I would like to discuss a new project.`);
-    window.open(`https://wa.me/919000000000?text=${msg}`, '_blank');
-  });
-  // Map lazy load (OpenStreetMap)
-  const wrap = document.getElementById('mapWrap');
-  const io = new IntersectionObserver(es=>{
-    es.forEach(e=>{
-      if(e.isIntersecting){
-        wrap.innerHTML = `<iframe class="map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=77.4,12.8,77.8,13.2&layer=mapnik&marker=12.9716,77.5946"></iframe>`;
-        io.disconnect();
-      }
-    });
-  },{threshold:.2});
-  io.observe(wrap);
-</script>
-</body>
-</html>
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+<meta charset="utf-8" />\
+<meta name="viewport" content="width=device-width, initial-scale=1" />\
+<title>Get in touch with | OBLIQ ASSOCIATES</title>\
+<meta name="description" content="Contact OBLIQ ASSOCIATES \'97 architecture for office, commercial infrastructure & interiors. Bengaluru, India."/>\
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png">\
+\
+<style>\
+  :root\{\
+    --c0:#F8FAFC; --c1:#D9EAFD; --c2:#BCCCDC; --c3:#9AA6B2;\
+    --paper:var(--c0); --ink:#0f172a; --muted:#64748b; --line:#e2e8f0;\
+    --brand:#2a9d8f;\
+    --glass:rgba(255,255,255,.75);\
+    --shadow-1:0 10px 30px rgba(0,0,0,.06);\
+    --shadow-2:0 18px 55px rgba(0,0,0,.12);\
+    --radius:16px;\
+    --h1:clamp(2rem,1.2rem + 3vw,3.2rem);\
+  \}\
+  *\{box-sizing:border-box\}\
+  body\{margin:0; font:400 1rem/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial; color:var(--ink); background:var(--paper)\}\
+  .container\{width:min(1100px,92%); margin-inline:auto\}\
+  a\{color:inherit; text-decoration:none\}\
+  img\{max-width:100%; display:block\}\
+\
+  /* Header */\
+  .site-header\{position:sticky; top:0; z-index:50; backdrop-filter:saturate(140%) blur(12px); background:var(--glass); border-bottom:1px solid var(--line)\}\
+  .nav\{display:flex; align-items:center; justify-content:space-between; gap:20px; padding:14px 0\}\
+  .brand\{display:flex; align-items:center; gap:12px; font-weight:800\}\
+  .brand img\{height:36px; width:auto; border-radius:8px\}\
+  .nav-links\{display:flex; gap:22px; align-items:center\}\
+  .nav-links a\{padding:8px 10px; border-radius:10px; color:#475569\}\
+  .nav-links a:hover,.nav-links a.active\{background:rgba(217,234,253,.55); color:var(--ink)\}\
+  .menu-toggle\{display:none; border:0; background:transparent; padding:8px\}\
+  .menu-toggle span\{display:block; width:24px; height:2px; background:#111; margin:5px 0; border-radius:2px\}\
+  @media (max-width:860px)\{\
+    .menu-toggle\{display:block\}\
+    .nav-links\{position:fixed; inset:64px 0 auto 0; background:var(--paper); border-bottom:1px solid var(--line); padding:16px; display:none; flex-direction:column\}\
+    .nav-links.open\{display:flex\}\
+  \}\
+\
+  /* Title */\
+  .hero\{padding:clamp(60px,8vw,120px) 0; background:\
+    radial-gradient(1000px 500px at 100% 0, rgba(217,234,253,.42), transparent 60%),\
+    radial-gradient(800px 520px at 0 0, rgba(188,204,220,.30), transparent 55%)\}\
+  .hero h1\{font-size:var(--h1); margin:0 0 10px\}\
+  .lead\{color:#475569; font-size:clamp(1rem,.9rem + .5vw,1.2rem); margin:0\}\
+\
+  /* Form */\
+  .section\{padding:clamp(40px,6vw,80px) 0\}\
+  .card\{background:#fff; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow-1); padding:22px\}\
+  form\{display:grid; gap:14px\}\
+  .row\{display:grid; grid-template-columns:1fr 1fr; gap:12px\}\
+  @media (max-width:720px)\{ .row\{grid-template-columns:1fr\} \}\
+  label\{display:block; font-weight:700; margin-bottom:6px\}\
+  .req\{color:#ef4444; margin-left:4px; font-weight:800\}\
+  input, textarea\{ width:100%; padding:12px 12px; border-radius:12px; border:1px solid var(--line); background:#fff; font:inherit; \}\
+  textarea\{min-height:140px; resize:vertical\}\
+  .hint\{color:var(--muted); font-size:.92rem\}\
+\
+  .btn\{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:12px; border:1px solid var(--line); background:#fff; font-weight:700; cursor:pointer; box-shadow:var(--shadow-1)\}\
+  .btn.primary\{background:linear-gradient(90deg, var(--brand), #38b2a3); color:#fff; border-color:transparent\}\
+  .btn[disabled]\{opacity:.6; cursor:not-allowed\}\
+  .status\{margin-top:8px; font-weight:700\}\
+  .status.ok\{color:#15803d\}\
+  .status.err\{color:#b91c1c\}\
+\
+  /* Map */\
+  .map-wrap\{margin-top:18px; border-radius:16px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow-1)\}\
+  .map\{aspect-ratio:16/9; width:100%; border:0; display:block; background:#f1f5f9\}\
+  .skeleton\{height:100%; width:100%; display:flex; align-items:center; justify-content:center; color:#64748b\}\
+\
+  /* Footer */\
+  .footer\{background:#0f172a; color:#d1d5db; padding:60px 0 30px; margin-top:40px\}\
+  .footer a\{color:#e5e7eb\}\
+  .f-grid\{display:grid; grid-template-columns:1.2fr 1fr 1fr .8fr; gap:20px\}\
+  .f-title\{color:#fff; font-weight:800; margin-bottom:10px\}\
+  .copyright\{border-top:1px solid #2b3240; text-align:center; padding-top:18px; margin-top:28px; color:#93a1b5; font-size:.95rem\}\
+</style>\
+</head>\
+<body>\
+  <!-- Header -->\
+  <header class="site-header">\
+    <div class="container nav">\
+      <a class="brand" href="index.html">\
+        <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1756871062/Favicon_jbspde.png" alt="OBLIQ ASSOCIATES Logo">\
+        OBLIQ ASSOCIATES\
+      </a>\
+      <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>\
+      <nav class="nav-links" aria-label="Primary">\
+        <a href="index.html">Home</a>\
+        <a href="projects.html">Projects</a>\
+        <a href="about.html">About</a>\
+        <a class="active" href="contact.html" aria-current="page">Contact</a>\
+      </nav>\
+    </div>\
+  </header>\
+\
+  <!-- Title -->\
+  <section class="hero">\
+    <div class="container">\
+      <h1>Get in touch with</h1>\
+      <p class="lead">We usually reply within one business day.</p>\
+    </div>\
+  </section>\
+\
+  <!-- Contact form (Web3Forms) -->\
+  <section class="section">\
+    <div class="container">\
+      <div class="card">\
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>\
+          <!-- REQUIRED by Web3Forms -->\
+          <input type="hidden" name="access_key" value="674fa470-93e7-4ccb-b383-cc0a7f7b6d36">\
+          <!-- Subject & From name -->\
+          <input type="hidden" name="subject" value="Website enquiry \'97 OBLIQ ASSOCIATES">\
+          <input type="hidden" name="from_name" value="OBLIQ ASSOCIATES Site">\
+          <!-- OPTIONAL (Pro): uncomment if your plan supports multiple recipients -->\
+          <!-- <input type="hidden" name="ccemail" value="thaqsheel.vincent@obliqassociates.com; aaronjoefelix@obliqassociates.com"> -->\
+\
+          <!-- Honeypot (spam) -->\
+          <input type="text" name="company" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute; left:-9999px; opacity:0;">\
+\
+          <!-- Time trap -->\
+          <input type="hidden" name="load_ts" id="loadTS">\
+\
+          <div class="row">\
+            <div>\
+              <label for="firstName">First name<span class="req" aria-hidden="true">*</span></label>\
+              <input id="firstName" name="first_name" type="text" required autocomplete="given-name" />\
+            </div>\
+            <div>\
+              <label for="lastName">Last name<span class="req" aria-hidden="true">*</span></label>\
+              <input id="lastName" name="last_name" type="text" required autocomplete="family-name" />\
+            </div>\
+          </div>\
+\
+          <div class="row">\
+            <div>\
+              <label for="email">Email<span class="req" aria-hidden="true">*</span></label>\
+              <input id="email" name="email" type="email" required autocomplete="email" inputmode="email" />\
+            </div>\
+            <div>\
+              <label for="phone">Phone<span class="req" aria-hidden="true">*</span></label>\
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" />\
+            </div>\
+          </div>\
+\
+          <div>\
+            <label for="message">Message<span class="req" aria-hidden="true">*</span></label>\
+            <textarea id="message" name="message" required placeholder="Tell us about your project, timeline and budget..."></textarea>\
+          </div>\
+\
+          <div class="hint">Fields marked with <span class="req">*</span> are required.</div>\
+\
+          <div>\
+            <button id="submitBtn" class="btn primary" type="submit">Send message</button>\
+            <button type="button" id="whBtn" class="btn" title="Send via WhatsApp">Send via WhatsApp</button>\
+            <div id="status" class="status" role="status" aria-live="polite"></div>\
+          </div>\
+        </form>\
+      </div>\
+\
+      <!-- Map -->\
+      <div class="map-wrap" id="mapWrap" aria-label="Office location">\
+        <div class="skeleton">Map loads as you scroll\'85</div>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- Footer -->\
+  <footer class="footer">\
+    <div class="container f-grid">\
+      <div>\
+        <div class="f-title">OBLIQ ASSOCIATES</div>\
+        <p>Architecture for office, commercial infrastructure & interiors.</p>\
+        <p>Bengaluru, Karnataka, India</p>\
+      </div>\
+      <div>\
+        <div class="f-title">Company</div>\
+        <p><a href="about.html">About</a></p>\
+        <p><a href="projects.html">Projects</a></p>\
+        <p><a href="ideas.html">Insights</a></p>\
+        <p><a href="contact.html">Contact</a></p>\
+      </div>\
+      <div>\
+        <div class="f-title">Connect</div>\
+        <p><a href="mailto:info@obliqassociates.com">info@obliqassociates.com</a></p>\
+        <p><a href="https://www.linkedin.com/company/obliqassociates" target="_blank" rel="noopener">LinkedIn</a></p>\
+        <p><a href="https://www.instagram.com/obliqassociates" target="_blank" rel="noopener">Instagram</a></p>\
+      </div>\
+      <div>\
+        <div class="f-title">Start</div>\
+        <a class="btn" style="background:#fff" href="contact.html">Book a consultation</a>\
+      </div>\
+    </div>\
+    <div class="container copyright">\'a9 2025 OBLIQ ASSOCIATES. All rights reserved.</div>\
+  </footer>\
+\
+  <script>\
+    // Add a load timestamp for a simple time-trap\
+    document.getElementById("loadTS").value = Date.now();\
+\
+    const form = document.getElementById("contactForm");\
+    const btn = document.getElementById("submitBtn");\
+    const statusEl = document.getElementById("status");\
+\
+    // Keep user on the same page and show inline success by posting with fetch\
+    form.addEventListener("submit", async (e) => \{\
+      e.preventDefault();\
+      statusEl.textContent = "";\
+      // Honeypot check\
+      if (form.company && form.company.value.trim() !== "") return;\
+\
+      // Time trap: require at least 1200ms after page load\
+      const ts = parseInt(form.load_ts.value || "0", 10);\
+      if (Date.now() - ts < 1200) \{\
+        statusEl.textContent = "Please wait a moment and try again.";\
+        statusEl.className = "status err";\
+        return;\
+      \}\
+\
+      // Basic required check\
+      const requiredOk = ["firstName","lastName","email","phone","message"]\
+        .every(id => document.getElementById(id).value.trim() !== "");\
+      if (!requiredOk) \{\
+        statusEl.textContent = "Please fill all required fields.";\
+        statusEl.className = "status err";\
+        return;\
+      \}\
+\
+      btn.disabled = true; btn.textContent = "Sending\'85";\
+\
+      try \{\
+        const data = new FormData(form);\
+        const res = await fetch(form.action, \{ method:"POST", body:data \});\
+        const json = await res.json();\
+        if (json.success) \{\
+          statusEl.textContent = "Thanks! Your message has been sent.";\
+          statusEl.className = "status ok";\
+          form.reset();\
+          // Reset time trap\
+          document.getElementById("loadTS").value = Date.now();\
+        \} else \{\
+          throw new Error(json.message || "Submission failed");\
+        \}\
+      \} catch (err) \{\
+        console.error(err);\
+        statusEl.textContent = "Sorry, something went wrong. Please email info@obliqassociates.com.";\
+        statusEl.className = "status err";\
+      \} finally \{\
+        btn.disabled = false; btn.textContent = "Send message";\
+      \}\
+    \});\
+\
+    // Click-to-WhatsApp helper (opens chat on user's device)\
+    document.getElementById("whBtn")?.addEventListener("click", () => \{\
+      const fn = document.getElementById("firstName").value.trim();\
+      const ln = document.getElementById("lastName").value.trim();\
+      const em = document.getElementById("email").value.trim();\
+      const ph = document.getElementById("phone").value.trim();\
+      const msg = document.getElementById("message").value.trim();\
+      const text = encodeURIComponent(\
+`New enquiry:\
+Name: $\{fn\} $\{ln\}\
+Email: $\{em\}\
+Phone: $\{ph\}\
+\
+$\{msg\}`);\
+      const yourNumber = "918880999481"; // TODO: replace with your WhatsApp number (no + or spaces)\
+      window.open(`https://wa.me/$\{yourNumber\}?text=$\{text\}`, "_blank");\
+    \});\
+\
+    // Lazy-load Map on scroll\
+    const mapWrap = document.getElementById("mapWrap");\
+    const io = new IntersectionObserver((entries, obs)=>\{\
+      if(entries.some(e => e.isIntersecting))\{\
+        const iframe = document.createElement("iframe");\
+        iframe.className = "map";\
+        iframe.title = "OBLIQ ASSOCIATES \'97 Bengaluru";\
+        iframe.loading = "lazy";\
+        iframe.referrerPolicy = "no-referrer-when-downgrade";\
+        iframe.src = "https://www.google.com/maps?q=Bengaluru,+Karnataka,+India&output=embed";\
+        mapWrap.innerHTML = "";\
+        mapWrap.appendChild(iframe);\
+        obs.disconnect();\
+      \}\
+    \}, \{ threshold: 0.25 \});\
+    io.observe(mapWrap);\
+\
+    // Mobile nav\
+    const toggle = document.querySelector(".menu-toggle");\
+    const links = document.querySelector(".nav-links");\
+    toggle?.addEventListener("click", ()=> links.classList.toggle("open"));\
+  </script>\
+</body>\
+</html>\
+}

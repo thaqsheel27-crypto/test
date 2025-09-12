@@ -1,135 +1,375 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>OBLIQ ASSOCIATES - Architecture & Workplace</title>
-<meta name="description" content="Architecture for office, commercial infrastructure & interiors. Human‑centred design, strategy to delivery. Bengaluru, India."/>
-<link rel="icon" type="image/png" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1757580005/Screenshot_2025-09-11_at_2.08.02_PM_p2euse.png">
-<link rel="stylesheet" href="assets/shared.css">
-<style>
-/* Sticky video hero */
-.video-zone{position:relative; height:210vh;}
-.sticky-layer{position:sticky; top:0; height:100vh; overflow:hidden; display:grid; place-items:center; isolation:isolate;}
-.bg-video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2; background:#000;}
-.scrim{position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.58)); z-index:-1}
-.center-wrap{max-width:1000px; padding:0 16px; text-align:center; color:#fff; text-shadow:0 2px 18px rgba(0,0,0,.45)}
-.hero-msg{font-weight:400; line-height:1.3; font-size:26px; font-family:"Helvetica Neue", Arial, ui-sans-serif}
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh16380\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-/* Map section */
-.world{border:1px solid var(--line); border-radius:16px; padding:18px; background:linear-gradient(180deg,#fff,#f5f9ff); box-shadow:var(--shadow-1)}
-.world .legend{display:flex; gap:12px; align-items:center; flex-wrap:wrap; color:#334155; font-weight:700; margin-bottom:10px}
-.world svg{width:100%; height:auto; display:block}
-.world .dot{fill:#4b5563; opacity:.8}
-.world .pulse{fill:#22c55e; animation:pulse 2.2s infinite ease-in-out}
-@keyframes pulse{0%{opacity:.2; r:2}50%{opacity:.7; r:5}100%{opacity:.2; r:2}}
-
-/* Cards under the map */
-.grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
-.card{background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; box-shadow:var(--shadow-1)}
-@media (max-width:960px){ .grid3{grid-template-columns:1fr} }
-</style>
-</head>
-<body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">
-      <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1757580005/Screenshot_2025-09-11_at_2.08.02_PM_p2euse.png" alt="OBLIQ ASSOCIATES Logo">
-      OBLIQ ASSOCIATES
-    </a>
-    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="index.html" class="active" aria-current="page">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="sustainability.html">Sustainability</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="video-zone" id="videoZone">
-  <div class="sticky-layer">
-    <video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="metadata" poster="">
-      <source src="https://res.cloudinary.com/dvpmvben2/video/upload/v1754466739/skdnfs_1_1_nlm7po.mp4">
-    </video>
-    <div class="scrim"></div>
-    <div class="center-wrap">
-      <div class="hero-msg">Delivering intelligent design solutions that bring out the best in people and organizations.</div>
-    </div>
-  </div>
-</section>
-
-<div class="divider" aria-hidden="true">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-    <path d="M0,40 C280,10 560,70 840,40 C1120,10 1400,60 1440,40 L1440,80 L0,80 Z" fill="url(#g1)"/>
-    <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9EAFD"/><stop offset="1" stop-color="#BCCCDC"/></linearGradient></defs>
-  </svg>
-</div>
-
-<section class="section container">
-  <span class="eyebrow">Delivering across India & beyond</span>
-  <h2 style="margin:.15em 0 .5em">Our footprint</h2>
-  <div class="world">
-    <div class="legend">• HQ: Bengaluru • Active: India metros • Projects: Middle East inquiries</div>
-    <!-- Simple, lightweight SVG map with pins -->
-    <svg viewBox="0 0 800 460" role="img" aria-label="Map of India with project markers">
-      <rect x="0" y="0" width="800" height="460" fill="#eef4ff"/>
-      <!-- India outline (approx / light) -->
-      <path d="M486,94 L506,115 L498,140 L514,164 L512,184 L492,184 L468,200 L454,226 L462,248 L442,258 L432,286 L440,306 L426,322 L412,314 L402,300 L388,284 L382,258 L394,238 L388,216 L404,198 L414,176 L428,160 L432,138 L452,118 Z" fill="#cfe2ff" stroke="#94a3b8"/>
-      <!-- Pins -->
-      <circle cx="412" cy="314" r="4" class="pulse"><title>Bengaluru (HQ)</title></circle>
-      <circle cx="462" cy="248" r="3" class="dot"><title>Mumbai</title></circle>
-      <circle cx="468" cy="200" r="3" class="dot"><title>Delhi NCR</title></circle>
-      <circle cx="454" cy="226" r="3" class="dot"><title>Ahmedabad</title></circle>
-      <circle cx="388" cy="284" r="3" class="dot"><title>Chennai</title></circle>
-      <circle cx="382" cy="258" r="3" class="dot"><title>Hyderabad</title></circle>
-      <circle cx="394" cy="238" r="3" class="dot"><title>Pune</title></circle>
-      <!-- "Beyond" marker (Dubai) -->
-      <circle cx="540" cy="250" r="3" class="dot"><title>Dubai (inquiries)</title></circle>
-    </svg>
-    <div class="grid3" style="margin-top:12px">
-      <div class="card"><strong>Pan‑India delivery</strong><br><span style="color:#64748b">We partner with reliable vendors across metros and tier‑2 cities.</span></div>
-      <div class="card"><strong>Remote design reviews</strong><br><span style="color:#64748b">Weekly design reviews keep stakeholders aligned and decisions fast.</span></div>
-      <div class="card"><strong>Global readiness</strong><br><span style="color:#64748b">Documentation, QA/QC and standards ready for cross‑border work.</span></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider" aria-hidden="true">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-    <path d="M0,40 C280,10 560,70 840,40 C1120,10 1400,60 1440,40 L1440,80 L0,80 Z" fill="url(#g1)"/>
-    <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9EAFD"/><stop offset="1" stop-color="#BCCCDC"/></linearGradient></defs>
-  </svg>
-</div>
-
-<footer class="footer">
-  <div class="f-grid">
-    <div>
-      <div class="f-title">OBLIQ ASSOCIATES</div>
-      <p>Human‑centred design, strategy to delivery.</p>
-    </div>
-    <div>
-      <div class="f-title">Connect</div>
-      <p><a href="mailto:thaqsheel.vincent@obliqassociates.com">thaqsheel.vincent@obliqassociates.com</a></p>
-      <p><a href="https://www.linkedin.com/company/obliq-associates">LinkedIn</a> • <a href="https://instagram.com/obliqassociates">Instagram</a></p>
-    </div>
-    <div>
-      <div class="f-title">Offices</div>
-      <p>Bengaluru, India</p>
-    </div>
-    <div>
-      <div class="f-title">Legal</div>
-      <p>© 2025 OBLIQ ASSOCIATES</p>
-    </div>
-  </div>
-  <div class="container copyright">© 2025 OBLIQ ASSOCIATES</div>
-</footer>
-
-<script src="assets/main.js"></script>
-<script>
-  SiteHelpers.fitLandingVideo(document.getElementById('bgVideo'));
-  SiteHelpers.autoPlayWhenVisible(document.getElementById('bgVideo'));
-</script>
-</body>
-</html>
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+<meta charset="utf-8" />\
+<meta name="viewport" content="width=device-width, initial-scale=1" />\
+<title>OBLIQ ASSOCIATES - Architecture & Workplace</title>\
+<meta name="description" content="Architecture for office, commercial infrastructure & interiors. Human-centred design, strategy to delivery. Bengaluru, India."/>\
+\
+<!-- Updated favicon -->\
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1757580005/Screenshot_2025-09-11_at_2.08.02_PM_p2euse.png">\
+<link rel="apple-touch-icon" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1757580005/Screenshot_2025-09-11_at_2.08.02_PM_p2euse.png" />\
+<link rel="icon" type="image/png" sizes="192x192" href="https://res.cloudinary.com/dvpmvben2/image/upload/v1757580005/Screenshot_2025-09-11_at_2.08.02_PM_p2euse.png" />\
+\
+<style>\
+  :root\{\
+    --c0:#F8FAFC; --c1:#D9EAFD; --c2:#BCCCDC; --c3:#9AA6B2;\
+    --paper:var(--c0); --ink:#1a202c; --muted:#64748b; --line:#e2e8f0;\
+    --glass:rgba(255,255,255,.75);\
+    --shadow-1:0 10px 30px rgba(0,0,0,.06);\
+    --shadow-2:0 18px 55px rgba(0,0,0,.12);\
+    --radius:18px;\
+    --h2:clamp(1.6rem,1.1rem + 2vw,2.6rem);\
+  \}\
+  *\{box-sizing:border-box\}\
+  body\{margin:0; font:400 1rem/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial; color:var(--ink); background:var(--paper)\}\
+  a\{color:inherit; text-decoration:none\}\
+  .container\{width:min(1200px,92%); margin-inline:auto\}\
+\
+  /* Header: fixed overlay (transparent at top; glass on scroll) */\
+  .site-header\{\
+    position:fixed; top:0; left:0; right:0; z-index:1000;\
+    background:transparent; border-bottom:1px solid transparent;\
+    backdrop-filter:none;\
+    transition:background .25s ease, backdrop-filter .25s ease, border-color .25s ease;\
+  \}\
+  .site-header.scrolled\{\
+    backdrop-filter:saturate(140%) blur(12px);\
+    background:var(--glass);\
+    border-bottom:1px solid var(--line);\
+  \}\
+  .nav\{display:flex; align-items:center; justify-content:space-between; gap:20px; padding:14px 0\}\
+  .brand\{display:flex; align-items:center; gap:12px; font-weight:800\}\
+  .brand img\{height:36px; width:auto; border-radius:8px\}\
+  .nav-links\{display:flex; gap:22px; align-items:center\}\
+  .nav-links a\{padding:8px 10px; border-radius:10px; transition:color .25s ease, background .25s ease\}\
+  .menu-toggle\{display:none; border:0; background:transparent; padding:8px\}\
+  .menu-toggle span\{display:block; width:24px; height:2px; margin:5px 0; border-radius:2px; transition:background .25s ease\}\
+  @media (max-width:860px)\{\
+    .menu-toggle\{display:block\}\
+    .nav-links\{\
+      position:fixed; inset:64px 0 auto 0; background:var(--paper);\
+      border-bottom:1px solid var(--line); padding:16px; display:none; flex-direction:column\
+    \}\
+    .nav-links.open\{display:flex\}\
+  \}\
+\
+  /* ---------- Dynamic nav colors ---------- */\
+  .site-header:not(.scrolled)\{\
+    --nav-ink:#ffffff;\
+    --nav-hover-bg:rgba(255,255,255,.18);\
+  \}\
+  .site-header.scrolled\{\
+    --nav-ink:#475569;\
+    --nav-hover-bg:rgba(217,234,253,.55);\
+  \}\
+  .site-header .brand,\
+  .site-header .nav-links a\{ color:var(--nav-ink); \}\
+  .site-header .nav-links a:hover,\
+  .site-header .nav-links a.active\{\
+    background:var(--nav-hover-bg);\
+    color:var(--nav-ink);\
+  \}\
+  .site-header .menu-toggle span\{ background:var(--nav-ink); \}\
+  .site-header:not(.scrolled) .brand,\
+  .site-header:not(.scrolled) .nav-links a\{\
+    text-shadow:0 2px 10px rgba(0,0,0,.35);\
+  \}\
+  .site-header:not(.scrolled) .brand img\{\
+    filter:drop-shadow(0 2px 10px rgba(0,0,0,.35));\
+  \}\
+  @media (max-width:860px)\{\
+    .site-header .nav-links.open a\{\
+      color:var(--ink) !important;\
+      text-shadow:none;\
+    \}\
+  \}\
+\
+  /* ---------- STICKY VIDEO ZONE ---------- */\
+  .video-zone\{position:relative; height:210vh;\}\
+  .sticky-layer\{position:sticky; top:0; height:100vh; overflow:hidden; display:grid; place-items:center; isolation:isolate;\}\
+  .bg-video\{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2\}\
+  .scrim\{position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.58)); z-index:-1\}\
+\
+  .center-wrap\{\
+    max-width:1000px; padding:0 16px; text-align:center; color:#fff;\
+    text-shadow:0 2px 18px rgba(0,0,0,.45);\
+    transform:translateY(var(--floatY,0px)); will-change:transform, opacity;\
+    transition:opacity .35s ease;\
+  \}\
+  .hero-msg\{font-weight:400; line-height:1.3; font-size:26px; font-family:"Helvetica Neue", Arial, ui-sans-serif; opacity:0; transition:opacity .35s ease;\}\
+\
+  .counter-overlay\{position:absolute; inset:0; display:grid; place-items:end center; padding-bottom:12vh; text-align:center; color:#fff; opacity:0; transition:opacity .6s ease;\}\
+  .counter-overlay.show\{opacity:1\}\
+  .counter-overlay.done\{opacity:0\}\
+  .glass-metric\{display:flex; flex-direction:column; align-items:center; gap:6px; padding:14px 18px; border-radius:14px; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.28); backdrop-filter: blur(10px) saturate(140%); box-shadow:0 10px 30px rgba(0,0,0,.18); min-width:min(86%, 520px);\}\
+  .glass-metric .label\{font-weight:700; letter-spacing:.01em; opacity:.95; font-size:clamp(1rem, .9rem + .7vw, 1.25rem);\}\
+  .glass-metric #sqft\{font:800 clamp(2rem,1.6rem + 3.2vw,3.2rem)/1 ui-sans-serif;\}\
+  .glass-metric .suffix\{font-weight:700; margin-left:.25ch\}\
+\
+  .section\{padding:clamp(56px,8vw,96px) 0\}\
+  .strip\{border:1px solid var(--line); border-radius:16px; overflow:hidden; background:#fff; box-shadow:var(--shadow-1)\}\
+  .row\{display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line)\}\
+  .row:first-child\{border-top:0\}\
+  .cell\{padding:18px; display:flex; align-items:center; gap:12px\}\
+  .icon\{width:38px; height:38px; border-radius:10px; border:1px solid var(--line); display:inline-block; background-position:center; background-repeat:no-repeat; background-size:contain; background-image:linear-gradient(135deg,var(--c1),var(--c2));\}\
+  @media (max-width:900px)\{ .row\{grid-template-columns:1fr 1fr\} \}\
+  @media (max-width:520px)\{ .row\{grid-template-columns:1fr\} \}\
+\
+  .ideas\{display:grid; grid-template-columns:repeat(3,1fr); gap:16px\}\
+  .idea\{background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:var(--shadow-1)\}\
+  .idea .ph\{aspect-ratio:16/10; background:linear-gradient(90deg,var(--c1),var(--c2)); opacity:.22\}\
+  .idea .meta\{padding:14px\}\
+  .tag\{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--line); color:#64748b; font-weight:700; font-size:.85rem; background:rgba(217,234,253,.35)\}\
+  @media (max-width:1024px)\{ .ideas\{grid-template-columns:1fr 1fr\} \}\
+  @media (max-width:600px)\{ .ideas\{grid-template-columns:1fr\} \}\
+\
+  .world\{border:1px solid var(--line); border-radius:16px; padding:18px; background:linear-gradient(180deg,#fff,#f5f9ff); box-shadow:var(--shadow-1)\}\
+  .world svg\{width:100%; height:auto; display:block\}\
+  .dot\{fill:#9AA6B2; opacity:.75\}\
+\
+  .btn\{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:12px; border:1px solid var(--line); background:#fff; font-weight:700; cursor:pointer; box-shadow:var(--shadow-1)\}\
+  .btn.primary\{background:linear-gradient(90deg, var(--c3), var(--c2)); color:#0f172a; border-color:transparent\}\
+  .footer\{background:#0f172a; color:#d1d5db; padding:60px 0 30px\}\
+  .footer a\{color:#e5e7eb\}\
+  .f-grid\{display:grid; grid-template-columns:1.2fr 1fr 1fr .8fr; gap:20px\}\
+  .f-title\{color:#fff; font-weight:800; margin-bottom:10px\}\
+  .copyright\{border-top:1px solid #2b3240; text-align:center; padding-top:18px; margin-top:28px; color:#93a1b5; font-size:.95rem\}\
+  @media (max-width:960px)\{ .f-grid\{grid-template-columns:1fr 1fr\} \}\
+  @media (max-width:640px)\{ .f-grid\{grid-template-columns:1fr\} \}\
+</style>\
+</head>\
+<body>\
+  <!-- Header -->\
+  <header class="site-header" id="siteHeader">\
+    <div class="container nav">\
+      <a class="brand" href="index.html">\
+        <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1757580005/Screenshot_2025-09-11_at_2.08.02_PM_p2euse.png" alt="OBLIQ ASSOCIATES Logo">\
+        OBLIQ ASSOCIATES\
+      </a>\
+      <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>\
+      <nav class="nav-links" aria-label="Primary">\
+        <a href="index.html" class="active" aria-current="page">Home</a>\
+        <a href="projects.html">Projects</a>\
+        <a href="sustainability.html">Sustainability</a>\
+        <a href="about.html">About</a>\
+        <a href="contact.html">Contact</a>\
+      </nav>\
+    </div>\
+  </header>\
+\
+  <!-- ---------- STICKY VIDEO ZONE ---------- -->\
+  <section class="video-zone" id="videoZone">\
+    <div class="sticky-layer">\
+      <video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="metadata" poster="">\
+        <source src="https://res.cloudinary.com/dvpmvben2/video/upload/v1754466739/skdnfs_1_1_nlm7po.mp4">\
+      </video>\
+      <div class="scrim"></div>\
+      <div id="msgWrap" class="center-wrap">\
+        <div id="msg1" class="hero-msg">Delivering intelligent design solutions that bring out the best in people and organizations.</div>\
+        <div id="msg2" class="hero-msg">We help organisations rethink the workplace\'97from strategy and design to engineering and delivery\'97so teams can do their best work.</div>\
+      </div>\
+      <div id="counterOverlay" class="counter-overlay" aria-live="polite">\
+        <div class="glass-metric">\
+          <span class="label">Transformed spaces</span>\
+          <div><span id="sqft">0</span><span class="suffix">+ sqft</span></div>\
+        </div>\
+      </div>\
+    </div>\
+  </section>\
+  <!-- Capabilities -->\
+  <section class="section container">\
+    <span class="eyebrow" style="display:inline-block; letter-spacing:.14em; text-transform:uppercase; color:#64748b; font-weight:800; font-size:.76rem; margin-bottom:8px">Capabilities</span>\
+    <h2 style="font-size:var(--h2)">Integrated strategy, design, engineering & delivery</h2>\
+    <div class="strip">\
+      <div class="row">\
+        <div class="cell">\
+          <span class="icon" aria-hidden="true"\
+            style="background:\
+              center/contain no-repeat url('https://res.cloudinary.com/dvpmvben2/image/upload/v1756995750/arlington-research-kN_kViDchA0-unsplash-min1756992886_igxkub.jpg'),\
+              linear-gradient(135deg,var(--c1),var(--c2));"></span>\
+          <div><strong>Workplace strategy</strong><br><span style="color:#64748b">Brief, test-fits, change</span></div>\
+        </div>\
+        <div class="cell">\
+          <span class="icon" aria-hidden="true"\
+            style="background:\
+              center/contain no-repeat url('https://res.cloudinary.com/dvpmvben2/image/upload/v1756995757/lance-anderson-QdAAasrZhdk-unsplash-min1756992885_dekase.jpg'),\
+              linear-gradient(135deg,var(--c1),var(--c2));"></span>\
+          <div><strong>Architecture</strong><br><span style="color:#64748b">Base build & core</span></div>\
+        </div>\
+        <div class="cell">\
+          <span class="icon" aria-hidden="true"\
+            style="background:\
+              center/contain no-repeat url('https://res.cloudinary.com/dvpmvben2/image/upload/v1756995756/austin-distel-wawEfYdpkag-unsplash_1_-min1756992885_elwvcw.jpg'),\
+              linear-gradient(135deg,var(--c1),var(--c2));"></span>\
+          <div><strong>Interior design</strong><br><span style="color:#64748b">Materiality & brand</span></div>\
+        </div>\
+        <div class="cell">\
+          <span class="icon" aria-hidden="true"\
+            style="background:\
+              center/contain no-repeat url('https://res.cloudinary.com/dvpmvben2/image/upload/v1756995751/joakim-nadell-K67sBVqLLuw-unsplash-min1756992885_djgs9r.jpg'),\
+              linear-gradient(135deg,var(--c1),var(--c2));"></span>\
+          <div><strong>Engineering</strong><br><span style="color:#64748b">MEP & systems</span></div>\
+        </div>\
+      </div>\
+      <div class="row">\
+        <div class="cell">\
+          <span class="icon" aria-hidden="true"\
+            style="background:\
+              center/contain no-repeat url('https://res.cloudinary.com/dvpmvben2/image/upload/v1756996092/christina-wocintechchat-com-glRqyWJgUeY-unsplash1756996066_kah8zr.jpg'),\
+              linear-gradient(135deg,var(--c1),var(--c2));"></span>\
+          <div><strong>Technology</strong><br><span style="color:#64748b">Smart rooms & data</span></div>\
+        </div>\
+        <div class="cell">\
+          <span class="icon" aria-hidden="true"\
+            style="background:\
+              center/contain no-repeat url('https://res.cloudinary.com/dvpmvben2/image/upload/v1756996092/ricardo-gomez-angel-WsEAiVwGrwo-unsplash_1_1756996066_ms3p4g.jpg'),\
+              linear-gradient(135deg,var(--c1),var(--c2));"></span>\
+          <div><strong>Sustainability</strong><br><span style="color:#64748b">LEED / WELL ready</span></div>\
+        </div>\
+        <div class="cell">\
+          <span class="icon" aria-hidden="true"\
+            style="background:\
+              center/contain no-repeat url('https://res.cloudinary.com/dvpmvben2/image/upload/v1756995750/jakub-zerdzicki-ykgLX_CwtDw-unsplash-min1756992886_d8wenq.jpg'),\
+              linear-gradient(135deg,var(--c1),var(--c2));"></span>\
+          <div><strong>Cost & PM</strong><br><span style="color:#64748b">Budget & delivery</span></div>\
+        </div>\
+        <div class="cell">\
+          <span class="icon" aria-hidden="true"\
+            style="background:\
+              center/contain no-repeat url('https://res.cloudinary.com/dvpmvben2/image/upload/v1756995750/ux-indonesia-qC2n6RQU4Vw-unsplash-min1756992886_k2yyut.jpg'),\
+              linear-gradient(135deg,var(--c1),var(--c2));"></span>\
+          <div><strong>Design & build</strong><br><span style="color:#64748b">One-team approach</span></div>\
+        </div>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- Insights -->\
+  <section class="section container">\
+    <span class="eyebrow" style="display:inline-block; letter-spacing:.14em; text-transform:uppercase; color:#64748b; font-weight:800; font-size:.76rem; margin-bottom:8px">Insights</span>\
+    <h2 style="font-size:var(--h2)">The ideas shaping modern workplaces</h2>\
+    <div class="ideas">\
+      <article class="idea">\
+        <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1756975902/ninthgrid-d6-bg-lCvZY-unsplash_m9wsgh.webp" \
+             alt="Workplace Strategy" style="width:100%; height:auto; object-fit:cover; aspect-ratio:16/10;">\
+        <div class="meta">\
+          <span class="tag">Workplace strategy</span>\
+          <h3 style="margin:.6rem 0 .3rem">Hybrid neighborhoods for focus & flow</h3>\
+          <p style="color:#64748b">Rethinking allocation between collaboration and deep work.</p>\
+        </div>\
+      </article>\
+      <article class="idea">\
+        <img src="https://res.cloudinary.com/dvpmvben2/image/upload/v1756989562/lycs-architecture-U2BI3GMnSSE-unsplash_1_byqbes.webp" \
+             alt="Sustainability" style="width:100%; height:auto; object-fit:cover; aspect-ratio:16/10;">\
+        <div class="meta">\
+          <span class="tag">Sustainability</span>\
+          <h3 style="margin:.6rem 0 .3rem">Daylight, comfort and energy</h3>\
+          <p style="color:#64748b">Using simulation to balance glare, lux levels and loads.</p>\
+        </div>\
+      </article>\
+      <article class="idea">\
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&q=80&w=1080" \
+             alt="Technology in Workplace" style="width:100%; height:auto; object-fit:cover; aspect-ratio:16/10;">\
+        <div class="meta">\
+          <span class="tag">Technology</span>\
+          <h3 style="margin:.6rem 0 .3rem">Smarter meeting experiences</h3>\
+          <p style="color:#64748b">Sensors + analytics to right-size rooms and reduce friction.</p>\
+        </div>\
+      </article>\
+    </div>\
+  </section>\
+\
+  <!-- Capabilities (unchanged) -->\
+  <!-- Insights (unchanged) -->\
+  <!-- Presence -->\
+  <section class="section container">\
+    <span class="eyebrow" style="display:inline-block; letter-spacing:.14em; text-transform:uppercase; color:#64748b; font-weight:800; font-size:.76rem; margin-bottom:8px">Presence</span>\
+    <h2 style="font-size:var(--h2)">Delivering across India and beyond</h2>\
+    <div class="world">\
+      <svg viewBox="0 0 960 380" aria-hidden="true"><rect width="960" height="380" fill="#ffffff"/><circle class="dot" cx="520" cy="180" r="5"/><text x="520" y="170" font-size="12" fill="#64748b">India</text></svg>\
+      <div style="color:#64748b; margin-top:8px">Bengaluru \'b7 Chennai \'b7 Hyderabad</div>\
+    </div>\
+  </section>\
+\
+  <!-- Footer (unchanged) -->\
+\
+<script>\
+  // Mobile nav\
+  const toggle=document.querySelector('.menu-toggle');\
+  const links=document.querySelector('.nav-links');\
+  toggle?.addEventListener('click',()=>links.classList.toggle('open'));\
+\
+  // Header glass on scroll\
+  const header = document.getElementById('siteHeader');\
+  const setHeaderGlass = () => \{\
+    if (window.scrollY > 2) header.classList.add('scrolled');\
+    else header.classList.remove('scrolled');\
+  \};\
+  window.addEventListener('scroll', setHeaderGlass, \{ passive:true \});\
+  setHeaderGlass();\
+\
+  // Scroll-driven hero text + metric\
+  const zone = document.getElementById('videoZone');\
+  const msgWrap = document.getElementById('msgWrap');\
+  const msg1 = document.getElementById('msg1');\
+  const msg2 = document.getElementById('msg2');\
+  const overlay = document.getElementById('counterOverlay');\
+  const sqftEl = document.getElementById('sqft');\
+  const SHOW_METRIC_AT = 0.88, MSG_SWITCH_AT = 0.45, FLOAT_MAX = -30;\
+  let metricStarted = false;\
+\
+  function progressInSticky()\{\
+    const r = zone.getBoundingClientRect();\
+    const max = Math.max(1, r.height - window.innerHeight);\
+    const scrolled = Math.min(Math.max(-r.top, 0), max);\
+    return \{ p: scrolled / max, max, scrolled \};\
+  \}\
+\
+  function update()\{\
+    const \{ p \} = progressInSticky();\
+    const floatY = (p * FLOAT_MAX);\
+    msgWrap.style.setProperty('--floatY', floatY.toFixed(1) + 'px');\
+    msg1.style.opacity = p < MSG_SWITCH_AT ? 1 : 0;\
+    msg2.style.opacity = (p >= MSG_SWITCH_AT && p < SHOW_METRIC_AT) ? 1 : 0;\
+    if (p >= SHOW_METRIC_AT) \{\
+      overlay.classList.add('show');\
+      if (!metricStarted) \{\
+        metricStarted = true;\
+        startCounter(100000, 1600);\
+        setTimeout(()=> overlay.classList.add('done'), 5000);\
+      \}\
+    \} else \{\
+      overlay.classList.remove('show','done');\
+      metricStarted = false; sqftEl.textContent = '0';\
+    \}\
+  \}\
+  function startCounter(target, durationMs)\{\
+    const start = performance.now();\
+    function step(t)\{\
+      const p = Math.min(1, (t - start) / durationMs);\
+      sqftEl.textContent = String(Math.floor(target * p));\
+      if (p < 1) requestAnimationFrame(step); else sqftEl.textContent = String(target);\
+    \}\
+    requestAnimationFrame(step);\
+  \}\
+  window.addEventListener('scroll', update, \{ passive:true \});\
+  window.addEventListener('resize', update); update();\
+\
+  // Ensure video plays on mobile\
+  const video = document.getElementById('bgVideo');\
+  const tryPlay = () => video.play().catch(()=>\{\});\
+  ['touchstart','click'].forEach(evt => \{\
+    window.addEventListener(evt, () => tryPlay(), \{ once: true \});\
+  \});\
+</script>\
+</body>\
+</html>\
+}
